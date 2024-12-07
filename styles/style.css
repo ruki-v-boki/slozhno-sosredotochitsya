@@ -1,5 +1,229 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+
+/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background: var(--background);
+  background-attachment: fixed;
+  inline-size: 1vw;
+}
+
+
+/* ------------------------------- HEADER ------------------------------- */
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-block-end: 56px;
+}
+
+/* --------------- decorated-zone */
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+/* --------------- tag */
+.tag {
+  position: absolute;
+  top: 0px;
+  right: 28px;
+  color: var(--accent-color);
+}
+
+.tag::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -19px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px  var(--accent-color);
+  background: var(--accent-color);
+}
+
+/* --------------- menu */
+.header__theme-menu {
+  justify-self: flex-end;
+  padding-block-start: 64px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* --------------- buttons */
+.header__theme-menu-button {
+  border: none;
+  padding-inline: 13px;
+  padding-block-end: 5px;
+  color: var(--accent-color);
+  font-size: 1rem;
+  line-height: 1em;
+  text-transform: lowercase;
+  background: transparent;
+}
+
+.header__theme-menu-button_active {
+  outline: 0.056em solid var(--accent-color);
+}
+
+/* --------------- status */
+.header__theme-menu-button:hover {
+  outline: 0.056em solid rgba(var(--accent-color-rgb), 0.4);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  box-shadow: 0px 1px 0px 0px var(--accent-color);
+  outline: none;
+}
+
+/* --------------- title */
+.title {
+  margin: var(--margin-block-start);
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: 116px;
+  line-height: 83%;
+  text-transform: lowercase;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.title-decor {
+  --margin-block-start: 20px 0 0;
+  margin: var(--margin-block-start);
+  color: var(--background-color);
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 23.4px;
+  background-color: var(--accent-color);
+}
+
+.title-decor_margin-top {
+  margin-top: 54px;
+}
+
+.title-decor_normal-weight {
+  font-weight: normal;
+}
+
+
+/* ------------------------------- SECTIONS ------------------------------- */
+.why {
+}
+
+.what {
+}
+
+.how {
+  padding-bottom: 32px;
+}
+
+.section-title {
+  margin-block-start: 50px;
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 23px;
+}
+
+
+/* --------------- text */
+.text {
+  padding-top: 10px;
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 23.4px;
+}
+
+/* --------------- link */
+.text-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-underline-offset: 3px;
+  text-shadow: 2px 1px 0 var(--accent-color);
+}
+
+/* --------------- status */
+.text-link:hover {
+ text-decoration: underline;
+}
+
+.text-link:active {
+  text-decoration: none;
+}
+
+.text-link:focus {
+  outline: none;
+}
+
+.text-link:focus-visible {
+  padding-right: 1px;
+  padding-bottom: 5px;
+  outline: 1px solid var(--text-color);
+  line-height: 8px;
+}
+/* .text-link:hover::after:has(:focus) {
+  text-decoration: none;
+} */
+
+
+/* ------------------------------- GALLERY ------------------------------- */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+/* --------------- image */
+.gallery__image {
+  display: block;
+  width: 100%;
+}
+
+
+
+/* ------------------------------- FOOTER ------------------------------- */
+.footer {
+  display: grid;
+  align-items: center;
+  height: 646px;
+  margin-top: 51px;
+}
+
+.title_footer {
+  margin: 0;
+  margin-top: 3px;
+  margin-left: 4px;
 }
