@@ -3,6 +3,5 @@
   и их переопределение под различные устройства
 */
 :root {
-  --margin-block-start: 67px 0 0;
-  --margin-block-end: 0 0 56px;
+  --main-font-size: 18px;
 }

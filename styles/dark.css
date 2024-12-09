@@ -3,14 +3,6 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-/* :root.theme_dark {
-  --background-color: #000028;
-  --background: var(--background-color) url(../images/cover-image-dark.png) no-repeat center / cover;
-  --title-color: #DB00FF;
-  --accent-color: #FF0070;
-  --accent-color-rgb: 255, 0, 112;
-  --text-color: #F1B2CE;
-} */
 
 @media (prefers-color-scheme: dark) {
   :root {

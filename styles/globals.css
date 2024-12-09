@@ -9,7 +9,6 @@
 }
 
 html {
-  font-size: 18px;
   block-size: 100%;
 }
 
@@ -17,9 +16,11 @@ body {
   margin: 0 auto;
   font-family: 'IBM Plex mono', monospace, sans-serif;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: var(--main-font-size);
   font-style: normal;
+  background: var(--background);
   background-color: var(--background-color);
+  background-attachment: fixed;
   min-inline-size: 375px;
   max-inline-size: 1440px;
 }
@@ -31,12 +32,10 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+  font-size: 1em;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 

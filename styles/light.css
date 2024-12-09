@@ -3,14 +3,6 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-/* :root.theme_light {
-  --background-color: #FFF1F7;
-  --background: var(--background-color) url(../images/cover-image-light.png) no-repeat center / cover;
-  --title-color: #FFC2E6;
-  --accent-color: #FF8DCB;
-  --accent-color-rgb: 50, 49, 45;
-  --text-color: #353430;
-} */
 
 @media (prefers-color-scheme: light) {
   :root {
