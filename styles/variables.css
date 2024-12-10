@@ -4,4 +4,7 @@
 */
 :root {
   --main-font-size: 18px;
+
+  --main-padding: 10px;
+  --main-padding-inline: 0 10px;
 }
