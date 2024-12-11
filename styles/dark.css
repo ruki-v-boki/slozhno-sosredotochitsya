@@ -6,8 +6,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-   --background: var(--background-color) url(../images/cover-image-dark.png) no-repeat center / cover;
     --background-color: #000028;
+    --background-image: image-set(
+      url('../images/cover-image-dark.png') type('image/png') 1x,
+      url('../images/cover-image-dark-2x.png') type('image/png') 2x);
+    --background: var(--background-color) var(--background-image) no-repeat center / cover;
     --title-color: #DB00FF;
     --accent-color: #FF0070;
     --accent-color-rgb: 255, 0, 112;
@@ -15,13 +18,18 @@
   }
 }
 
+/* ---------------------------------------------------------------------------------- */
+
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-color: #000028;
-  --background: var(--background-color) url(../images/cover-image-dark.png) no-repeat center / cover;
+  --background-image: image-set(
+    url('../images/cover-image-dark.png') type('image/png') 1x,
+    url('../images/cover-image-dark-2x.png') type('image/png') 2x);
+  --background: var(--background-color) var(--background-image) no-repeat center / cover;
   --title-color: #DB00FF;
   --accent-color: #FF0070;
   --accent-color-rgb: 255, 0, 112;

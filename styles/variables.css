@@ -3,8 +3,15 @@
   и их переопределение под различные устройства
 */
 :root {
+  /* font  */
+  --main-font-family: 'IBM Plex mono', monospace, sans-serif;
   --main-font-size: 18px;
+  --main-line-height: 1.3em;
+  --main-font-weight: 400;
+  --bold-font-weight: 700;
+  --main-font-style: normal;
 
-  --main-padding: 10px;
-  --main-padding-inline: 0 10px;
+  /* padding */
+  --main-mobile-padding: 10px;
+  --main-desktop-padding: 20px;
 }

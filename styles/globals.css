@@ -14,10 +14,11 @@ html {
 
 body {
   margin: 0 auto;
-  font-family: 'IBM Plex mono', monospace, sans-serif;
-  font-weight: normal;
+  font-family: var(--main-font-family);
+  font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
-  font-style: normal;
+  font-style: var(--main-font-style);
+  line-height: var(--main-line-height);
   background: var(--background);
   background-color: var(--background-color);
   background-attachment: fixed;
