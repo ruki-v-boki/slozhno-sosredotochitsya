@@ -127,12 +127,6 @@
   font-weight: var(--bold-font-weight);
   line-height: var(--main-line-height);
   background-color: var(--accent-color);
-  block-size: fit-content;
-}
-
-
-.title-decor_normal-weight {
-  font-weight: var(--main-font-weight);
 }
 
 
@@ -212,8 +206,8 @@
   line-height: var(--main-line-height);
 }
 
-.section-list-item:last-child .section-text {
-  padding-block-end: 0;
+.title-decor_normal-weight {
+  font-weight: var(--main-font-weight);
 }
 
 /* --------------- text */
@@ -221,6 +215,10 @@
   padding: var(--main-mobile-padding) 0 calc(var(--main-mobile-padding) * 2);
   color: var(--text-color);
   line-height: var(--main-line-height);
+}
+
+.section-list-item:last-child .section-text {
+  padding-block-end: 0;
 }
 
 /* --------------- link */
