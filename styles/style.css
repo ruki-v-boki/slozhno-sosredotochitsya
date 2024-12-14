@@ -231,17 +231,8 @@
 
 /* --------------- status */
 .text-link:hover {
+  border-block-end: 1px solid var(--text-color);
   line-height: 1em;
-}
-
-.text-link:hover::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  background-color: var(--text-color);
-  block-size: 1px;
-  inline-size: 100%;
 }
 
 .text-link:active {

@@ -1,20 +1,4 @@
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #000028;
-    --background-image: image-set(
-      url('../images/cover-image-dark.png') type('image/png') 1x,
-      url('../images/cover-image-dark-2x.png') type('image/png') 2x);
-    --background: var(--background-color) var(--background-image) no-repeat center / cover;
-    --title-color: #DB00FF;
-    --accent-color: #FF0070;
-    --accent-color-rgb: 255, 0, 112;
-    --text-color: #F1B2CE;
-  }
-}
-
-/* ------------------------------------------------------------------------------------ */
-
 .page.theme_dark {
   --background-color: #000028;
   --background-image: image-set(
