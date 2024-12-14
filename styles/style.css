@@ -159,8 +159,7 @@
   }
 
   .header__title {
-    margin-inline-start: -20px;
-    margin-block-start: 0;
+    margin: 3px 0 0 -20px;
   }
 
   .title {
@@ -185,6 +184,10 @@
   .header__theme-menu-list {
     flex-direction: row;
     gap: 13px;
+  }
+
+  .header__title {
+    margin-block-start: 0;
   }
 }
 
@@ -262,12 +265,17 @@
 @media (width >= 768px) {
   .main {
     row-gap: 80px;
-    padding: 60px var(--main-desktop-padding);
+    padding: 60px var(--main-desktop-padding) 64px;
   }
 
   .main__section_why {
     grid-template-columns: 1fr 2fr;
-    gap: var(--main-desktop-padding);
+    row-gap: 0;
+    column-gap: var(--main-desktop-padding);
+  }
+
+  .main__section_why .section-title {
+    grid-row: span 2;
   }
 
   .main__section_what .section-title {
@@ -286,8 +294,12 @@
 
 /* ------------------------------ Desktop */
 @media (width >= 1024px) {
+  .main {
+    padding: 60px var(--main-desktop-padding) 65px;
+  }
+
   .main__section_why {
-    gap: var(--main-mobile-padding);
+    column-gap: var(--main-mobile-padding);
   }
 
   .main__section_what .section-title {
@@ -311,20 +323,26 @@
 
 
 /* ------------------------------- GALLERY ------------------------------- */
-.gallery {
+.main__gallery {
   margin-block-start: -1px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: var(--main-mobile-padding);
 }
 
 .gallery__box {
   display: grid;
   gap: var(--main-mobile-padding);
-  padding-block-start: var(--main-mobile-padding);
 }
 
 /* --------------- image */
 .gallery__image {
   display: block;
   object-fit: cover;
+  color: var(--background-color);
   background-color: var(--title-color);
   inline-size: 100%;
   block-size: 100%;
@@ -333,12 +351,15 @@
 
 /* ------------------------------- GALLERY-MEDIA ------------------------------- */
 @media (width >= 768px) {
+  .gallery {
+    gap: var(--main-desktop-padding);
+  }
+
   .gallery__box {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
     grid-auto-flow: dense;
     gap: var(--main-desktop-padding);
-    padding-block-start: var(--main-desktop-padding);
   }
 
   .gallery__image:nth-child(1) {

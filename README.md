@@ -1,1 +1,2 @@
-https://github.com/ruki-v-boki/slozhno-sosredotochitsya.git
+работа по старому макету и старому ТЗ
+https://github.com/ruki-v-boki/slozhno-sosredotochitsya-fd.git
