@@ -24,8 +24,8 @@
   position: absolute;
   top: var(--main-mobile-padding);
   right: var(--main-mobile-padding);
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--decor-color);
+  border-block-start: 1px solid var(--decor-color);
   inline-size: 1.38em;
   block-size: 1.38em;
 }
@@ -35,8 +35,8 @@
   position: absolute;
   bottom: var(--main-mobile-padding);
   left: var(--main-mobile-padding);
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--decor-color);
+  border-block-end: 1px solid var(--decor-color);
   inline-size: 1.38em;
   block-size: 1.38em;
 }
@@ -47,7 +47,7 @@
   top: var(--main-mobile-padding);
   /* right: 38px; */
   right: calc(var(--main-mobile-padding) + 28px);
-  color: var(--accent-color);
+  color: var(--decor-color);
   font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
@@ -61,8 +61,8 @@
   right: -20px;
   display: block;
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px  var(--accent-color);
-  background: var(--accent-color);
+  box-shadow: 0 0 4px 2px  var(--decor-color);
+  background: var(--decor-color);
   inline-size: 0.5em;
   block-size: 0.5em;
 }
@@ -83,7 +83,7 @@
 .header__theme-menu-button {
   border: none;
   padding: 1px 12px 5px;
-  color: var(--accent-color);
+  color: var(--button-color);
   line-height: 1em;
   text-transform: lowercase;
   background: transparent;
@@ -91,12 +91,12 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 0.056em solid var(--accent-color);
+  outline: 0.056em solid var(--button-color);
 }
 
 /* --------------- status */
 .header__theme-menu-button:hover {
-  outline: 0.056em solid rgba(var(--accent-color-rgb), 0.4);
+  outline: 0.056em solid rgba(var(--button-color-rgb), 0.4);
 }
 
 .header__theme-menu-button:focus {
@@ -104,7 +104,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  box-shadow: 0px 1px 0px 0px var(--accent-color);
+  box-shadow: 0px 1px 0px 0px var(--button-color);
   outline: none;
 }
 
@@ -123,7 +123,7 @@
 }
 
 .title-decor {
-  color: var(--background-color);
+  color: var(--subtitle-color);
   font-weight: var(--bold-font-weight);
   line-height: var(--main-line-height);
   background-color: var(--accent-color);
@@ -201,7 +201,7 @@
 
 /* --------------- title */
 .section-title {
-  color: var(--accent-color);
+  color: var(--section-title-color);
   font-weight: var(--bold-font-weight);
   line-height: var(--main-line-height);
 }
